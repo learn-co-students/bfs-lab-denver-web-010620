@@ -1,0 +1,670 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200517.180437.70663.0.001.json",
+    "dumpEventTime": "2020-05-17T18:04:37Z",
+    "dumpEventTimeStamp": "1589774677240",
+    "processId": 70663,
+    "threadId": null,
+    "cwd": "/Users/evangreer/Documents/Flatiron School Core/Module 6/comp science/bfs-lab-denver-web-010620",
+    "commandLine": [
+      "/Users/evangreer/.nvm/versions/node/v13.11.0/bin/node",
+      "/Users/evangreer/Documents/Flatiron School Core/Module 6/comp science/bfs-lab-denver-web-010620/node_modules/mocha/bin/_mocha",
+      "--timeout",
+      "10000",
+      "-R",
+      "mocha-multi",
+      "--reporter-options",
+      "nyan=-,json=.results.json"
+    ],
+    "nodejsVersion": "v13.11.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "darwin",
+    "componentVersions": {
+      "node": "13.11.0",
+      "v8": "7.9.317.25-node.29",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.40.0",
+      "napi": "6",
+      "llhttp": "2.0.4",
+      "openssl": "1.1.1d",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.11.0/node-v13.11.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.11.0/node-v13.11.0.tar.gz"
+    },
+    "osName": "Darwin",
+    "osRelease": "18.7.0",
+    "osVersion": "Darwin Kernel Version 18.7.0: Thu Jan 23 06:52:12 PST 2020; root:xnu-4903.278.25~1/RELEASE_X86_64",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz",
+        "speed": 2800,
+        "user": 35892370,
+        "nice": 0,
+        "sys": 20400220,
+        "idle": 195433910,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz",
+        "speed": 2800,
+        "user": 2642790,
+        "nice": 0,
+        "sys": 2295700,
+        "idle": 246764470,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz",
+        "speed": 2800,
+        "user": 34557480,
+        "nice": 0,
+        "sys": 13754250,
+        "idle": 203391940,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz",
+        "speed": 2800,
+        "user": 2355640,
+        "nice": 0,
+        "sys": 1697160,
+        "idle": 247650080,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz",
+        "speed": 2800,
+        "user": 27191760,
+        "nice": 0,
+        "sys": 10478460,
+        "idle": 214033350,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz",
+        "speed": 2800,
+        "user": 2252750,
+        "nice": 0,
+        "sys": 1479940,
+        "idle": 247970110,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz",
+        "speed": 2800,
+        "user": 20954890,
+        "nice": 0,
+        "sys": 7778020,
+        "idle": 222970570,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8569U CPU @ 2.80GHz",
+        "speed": 2800,
+        "user": 2223840,
+        "nice": 0,
+        "sys": 1297610,
+        "idle": 248181270,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 1
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "38:f9:d3:e6:47:d1",
+        "address": "fe80::c24:d653:72c3:ffa2",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 10
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "38:f9:d3:e6:47:d1",
+        "address": "192.168.1.105",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "awdl0",
+        "internal": false,
+        "mac": "26:b7:a3:bf:29:f5",
+        "address": "fe80::24b7:a3ff:febf:29f5",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 12
+      },
+      {
+        "name": "utun0",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::fb6f:991c:e150:2c66",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 18
+      },
+      {
+        "name": "utun1",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::80d:86c8:b574:7b32",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 19
+      },
+      {
+        "name": "en5",
+        "internal": false,
+        "mac": "ac:de:48:00:11:22",
+        "address": "fe80::aede:48ff:fe00:1122",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 8
+      }
+    ],
+    "host": "EVANs-MBP.hawaii.rr.com"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00000001001a906c",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, v8::Local<v8::String>) [/Users/evangreer/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001000976ca",
+      "symbol": "node::OnFatalError(char const*, char const*) [/Users/evangreer/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001001dcc87",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/Users/evangreer/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001001dcc23",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/Users/evangreer/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x000000010035f6f5",
+      "symbol": "v8::internal::Heap::FatalProcessOutOfMemory(char const*) [/Users/evangreer/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100360dd4",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [/Users/evangreer/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x000000010035db6e",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/Users/evangreer/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x000000010035bb56",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/Users/evangreer/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x000000010035c023",
+      "symbol": "v8::internal::Heap::CollectAllAvailableGarbage(v8::internal::GarbageCollectionReason) [/Users/evangreer/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001003675c6",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/Users/evangreer/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001003348a6",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [/Users/evangreer/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x0000000100674b20",
+      "symbol": "v8::internal::Runtime_AllocateInOldGeneration(int, unsigned long*, v8::internal::Isolate*) [/Users/evangreer/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x00000001009b0939",
+      "symbol": "Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit [/Users/evangreer/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x000033ad8d2a4b58",
+      "symbol": ""
+    },
+    {
+      "pc": "0x000000010093cabb",
+      "symbol": "Builtins_InterpreterEntryTrampoline [/Users/evangreer/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x000000010093cabb",
+      "symbol": "Builtins_InterpreterEntryTrampoline [/Users/evangreer/.nvm/versions/node/v13.11.0/bin/node]"
+    },
+    {
+      "pc": "0x000000010093cabb",
+      "symbol": "Builtins_InterpreterEntryTrampoline [/Users/evangreer/.nvm/versions/node/v13.11.0/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2310270976,
+    "totalCommittedMemory": 2307759312,
+    "usedMemory": 2305151496,
+    "availableMemory": 2094848,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33328,
+        "capacity": 33040,
+        "used": 33040,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 2304,
+        "capacity": 1047424,
+        "used": 0,
+        "available": 1047424
+      },
+      "old_space": {
+        "memorySize": 1682059264,
+        "committedMemory": 1682051440,
+        "capacity": 1679934184,
+        "used": 1679934184,
+        "available": 0
+      },
+      "code_space": {
+        "memorySize": 430080,
+        "committedMemory": 314272,
+        "capacity": 230688,
+        "used": 230688,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1314816,
+        "committedMemory": 1250448,
+        "capacity": 914160,
+        "used": 914160,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 624058368,
+        "committedMemory": 624058368,
+        "capacity": 624036640,
+        "used": 624036640,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047424,
+        "used": 0,
+        "available": 1047424
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 63.7896,
+    "kernelCpuSeconds": 2.69384,
+    "cpuConsumptionPercent": 189.953,
+    "maxRss": 3065373523968,
+    "pageFaults": {
+      "IORequired": 1,
+      "IONotRequired": 1208417
+    },
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "npm_config_save_dev": "",
+    "npm_config_legacy_bundling": "",
+    "npm_config_dry_run": "",
+    "BUNDLER_ORIG_PATH": "/Users/evangreer/.nvm/versions/node/v13.11.0/bin:/Users/evangreer/.rvm/gems/ruby-2.6.1/bin:/Users/evangreer/.rvm/gems/ruby-2.6.1@global/bin:/Users/evangreer/.rvm/rubies/ruby-2.6.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/evangreer/.rvm/gems/ruby-2.6.1/bin:/Users/evangreer/.rvm/gems/ruby-2.6.1@global/bin:/Users/evangreer/.rvm/rubies/ruby-2.6.1/bin:/Users/evangreer/.rvm/bin:/Users/evangreer/.rvm/bin",
+    "npm_config_viewer": "man",
+    "npm_config_only": "",
+    "npm_config_commit_hooks": "true",
+    "npm_config_browser": "",
+    "npm_package_gitHead": "f68cac233b37f2a54be5ff95501b81f5a33712a4",
+    "npm_config_also": "",
+    "npm_config_sign_git_commit": "",
+    "npm_config_rollback": "true",
+    "TERM_PROGRAM": "vscode",
+    "rvm_bin_path": "/Users/evangreer/.rvm/bin",
+    "NODE": "/Users/evangreer/.nvm/versions/node/v13.11.0/bin/node",
+    "npm_config_usage": "",
+    "npm_config_audit": "true",
+    "INIT_CWD": "/Users/evangreer/Documents/Flatiron School Core/Module 6/comp science/bfs-lab-denver-web-010620",
+    "npm_package_homepage": "https://github.com/learn-co-curriculum/js-basics-online-shopping-lab#readme",
+    "GEM_HOME": "/Users/evangreer/.rvm/gems/ruby-2.6.1",
+    "NVM_CD_FLAGS": "",
+    "npm_config_globalignorefile": "/Users/evangreer/.nvm/versions/node/v13.11.0/etc/npmignore",
+    "npm_package_devDependencies_mocha": "^2.4.5",
+    "BUNDLER_ORIG_MANPATH": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "SHELL": "/bin/bash",
+    "TERM": "xterm-256color",
+    "npm_config_shell": "/bin/bash",
+    "npm_config_maxsockets": "50",
+    "npm_config_init_author_url": "",
+    "npm_config_shrinkwrap": "true",
+    "npm_config_parseable": "",
+    "npm_config_metrics_registry": "https://registry.npmjs.org/",
+    "BUNDLER_ORIG_GEM_HOME": "/Users/evangreer/.rvm/gems/ruby-2.6.1",
+    "TMPDIR": "/var/folders/93/xjzgwzr55tn_126h7fn_myh40000gn/T/",
+    "IRBRC": "/Users/evangreer/.rvm/rubies/ruby-2.6.1/.irbrc",
+    "npm_config_timing": "",
+    "npm_config_init_license": "ISC",
+    "Apple_PubSub_Socket_Render": "/private/tmp/com.apple.launchd.dqmVCsrsCE/Render",
+    "npm_config_if_present": "",
+    "npm_package_devDependencies_babel_core": "^6.11.4",
+    "TERM_PROGRAM_VERSION": "1.45.0",
+    "npm_config_sign_git_tag": "",
+    "npm_config_init_author_email": "",
+    "npm_config_cache_max": "Infinity",
+    "BUNDLER_ORIG_BUNDLER_VERSION": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "npm_config_preid": "",
+    "npm_config_long": "",
+    "npm_config_local_address": "",
+    "npm_config_git_tag_version": "true",
+    "npm_config_cert": "",
+    "npm_package_directories_test": "test",
+    "TERM_SESSION_ID": "9044F7C1-8B14-44C0-B22A-F0556E08B74B",
+    "MY_RUBY_HOME": "/Users/evangreer/.rvm/rubies/ruby-2.6.1",
+    "npm_config_registry": "https://registry.npmjs.org/",
+    "npm_config_noproxy": "",
+    "npm_config_fetch_retries": "2",
+    "npm_package_devDependencies_expect": "^1.20.2",
+    "npm_package_repository_url": "git+https://github.com/learn-co-curriculum/js-basics-online-shopping-lab.git",
+    "npm_config_versions": "",
+    "npm_config_message": "%s",
+    "npm_config_key": "",
+    "npm_package_readmeFilename": "README.md",
+    "npm_package_devDependencies_mocha_multi": "^0.9.0",
+    "npm_package_description": "Practice with objects, arrays, and functions in JavaScript on Learn",
+    "USER": "evangreer",
+    "NVM_DIR": "/Users/evangreer/.nvm",
+    "rvm_stored_umask": "0022",
+    "npm_package_license": "SEE LICENSE IN LICENSE.md",
+    "COMMAND_MODE": "unix2003",
+    "npm_config_globalconfig": "/Users/evangreer/.nvm/versions/node/v13.11.0/etc/npmrc",
+    "npm_config_prefer_online": "",
+    "npm_config_logs_max": "10",
+    "npm_config_always_auth": "",
+    "rvm_path": "/Users/evangreer/.rvm",
+    "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.Jany382tY5/Listeners",
+    "__CF_USER_TEXT_ENCODING": "0x1F5:0x0:0x0",
+    "npm_execpath": "/Users/evangreer/.nvm/versions/node/v13.11.0/lib/node_modules/npm/bin/npm-cli.js",
+    "npm_config_global_style": "",
+    "npm_config_cache_lock_retries": "10",
+    "npm_config_update_notifier": "true",
+    "npm_config_cafile": "",
+    "npm_package_author_name": "@vicfriedman",
+    "BUNDLER_ORIG_RUBYLIB": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "npm_config_heading": "npm",
+    "npm_config_audit_level": "low",
+    "npm_config_searchlimit": "20",
+    "npm_config_read_only": "",
+    "npm_config_offline": "",
+    "npm_config_fetch_retry_mintimeout": "10000",
+    "BUNDLER_ORIG_RUBYOPT": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "rvm_prefix": "/Users/evangreer",
+    "npm_config_json": "",
+    "npm_config_access": "",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"test\"],\"original\":[\"test\"]}",
+    "npm_package_devDependencies_babel_preset_es2015": "^6.9.0",
+    "PATH": "/Users/evangreer/.nvm/versions/node/v13.11.0/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/Users/evangreer/Documents/Flatiron School Core/Module 6/comp science/bfs-lab-denver-web-010620/node_modules/.bin:/Users/evangreer/.nvm/versions/node/v13.11.0/bin:/Users/evangreer/.rvm/gems/ruby-2.6.1/bin:/Users/evangreer/.rvm/gems/ruby-2.6.1@global/bin:/Users/evangreer/.rvm/rubies/ruby-2.6.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/evangreer/.rvm/gems/ruby-2.6.1/bin:/Users/evangreer/.rvm/gems/ruby-2.6.1@global/bin:/Users/evangreer/.rvm/rubies/ruby-2.6.1/bin:/Users/evangreer/.rvm/bin:/Users/evangreer/.rvm/bin",
+    "npm_config_allow_same_version": "",
+    "npm_config_https_proxy": "",
+    "npm_config_engine_strict": "",
+    "npm_config_description": "true",
+    "_": "/Users/evangreer/Documents/Flatiron School Core/Module 6/comp science/bfs-lab-denver-web-010620/node_modules/.bin/mocha",
+    "npm_config_userconfig": "/Users/evangreer/.npmrc",
+    "npm_config_init_module": "/Users/evangreer/.npm-init.js",
+    "npm_package_keywords_4": "learn",
+    "rvm_loaded_flag": "1",
+    "npm_config_cidr": "",
+    "npm_package_keywords_5": "flatiron",
+    "PWD": "/Users/evangreer/Documents/Flatiron School Core/Module 6/comp science/bfs-lab-denver-web-010620",
+    "npm_config_user": "501",
+    "npm_config_node_version": "13.11.0",
+    "npm_package_bugs_url": "https://github.com/learn-co-curriculum/js-basics-online-shopping-lab/issues",
+    "npm_lifecycle_event": "test",
+    "npm_package_devDependencies_jsdom": "^9.0.0",
+    "npm_config_save": "true",
+    "npm_config_ignore_prepublish": "",
+    "npm_config_editor": "vi",
+    "npm_config_auth_type": "legacy",
+    "npm_package_keywords_0": "objects",
+    "npm_package_repository_type": "git",
+    "npm_package_name": "js-basics-online-shopping-lab",
+    "BUNDLER_ORIG_GEM_PATH": "/Users/evangreer/.rvm/gems/ruby-2.6.1:/Users/evangreer/.rvm/gems/ruby-2.6.1@global",
+    "LANG": "en_US.UTF-8",
+    "npm_config_tag": "latest",
+    "npm_config_script_shell": "",
+    "npm_package_keywords_1": "arrays",
+    "npm_config_progress": "true",
+    "npm_config_global": "",
+    "npm_config_before": "",
+    "npm_package_dependencies_chai": "^3.5.0",
+    "npm_package_keywords_2": "functions",
+    "npm_config_searchstaleness": "900",
+    "npm_config_optional": "true",
+    "npm_config_ham_it_up": "",
+    "npm_package_keywords_3": "javascript",
+    "XPC_FLAGS": "0x0",
+    "npm_config_save_prod": "",
+    "npm_config_force": "",
+    "npm_config_bin_links": "true",
+    "npm_config_searchopts": "",
+    "npm_config_node_gyp": "/Users/evangreer/.nvm/versions/node/v13.11.0/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js",
+    "npm_config_depth": "Infinity",
+    "npm_package_main": "shopping.js",
+    "npm_config_sso_poll_frequency": "500",
+    "npm_config_rebuild_bundle": "true",
+    "npm_package_version": "0.1.0",
+    "XPC_SERVICE_NAME": "0",
+    "npm_config_unicode": "true",
+    "rvm_version": "1.29.9-next (master)",
+    "HOME": "/Users/evangreer",
+    "SHLVL": "3",
+    "npm_config_fetch_retry_maxtimeout": "60000",
+    "npm_package_scripts_test": "mocha -R mocha-multi --reporter-options nyan=-,json=.results.json",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "VSCODE_GIT_ASKPASS_MAIN": "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js",
+    "npm_config_tag_version_prefix": "v",
+    "npm_config_strict_ssl": "true",
+    "npm_config_sso_type": "oauth",
+    "npm_config_scripts_prepend_node_path": "warn-only",
+    "npm_config_save_prefix": "^",
+    "npm_config_loglevel": "notice",
+    "npm_config_ca": "",
+    "npm_config_save_exact": "",
+    "npm_config_group": "20",
+    "npm_config_fetch_retry_factor": "10",
+    "npm_config_dev": "",
+    "npm_config_version": "",
+    "npm_config_prefer_offline": "",
+    "npm_config_cache_lock_stale": "60000",
+    "npm_config_otp": "",
+    "npm_config_cache_min": "10",
+    "npm_package_dependencies_sinon": "^2.0.0",
+    "npm_config_searchexclude": "",
+    "npm_config_cache": "/Users/evangreer/.npm",
+    "BUNDLER_ORIG_BUNDLE_GEMFILE": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "LOGNAME": "evangreer",
+    "npm_lifecycle_script": "mocha -R mocha-multi --reporter-options nyan=-,json=.results.json",
+    "npm_config_color": "true",
+    "npm_config_proxy": "",
+    "npm_config_package_lock": "true",
+    "GEM_PATH": "/Users/evangreer/.rvm/gems/ruby-2.6.1:/Users/evangreer/.rvm/gems/ruby-2.6.1@global",
+    "VSCODE_GIT_IPC_HANDLE": "/var/folders/93/xjzgwzr55tn_126h7fn_myh40000gn/T/vscode-git-4ad2c061e4.sock",
+    "npm_config_package_lock_only": "",
+    "npm_config_fund": "true",
+    "npm_config_save_optional": "",
+    "NVM_BIN": "/Users/evangreer/.nvm/versions/node/v13.11.0/bin",
+    "npm_config_ignore_scripts": "",
+    "npm_config_user_agent": "npm/6.14.3 node/v13.11.0 darwin x64",
+    "npm_config_cache_lock_wait": "10000",
+    "GIT_ASKPASS": "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh",
+    "VSCODE_GIT_ASKPASS_NODE": "/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Renderer).app/Contents/MacOS/Code Helper (Renderer)",
+    "npm_config_production": "",
+    "npm_config_send_metrics": "",
+    "npm_config_save_bundle": "",
+    "BUNDLER_ORIG_BUNDLE_BIN_PATH": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "npm_config_umask": "0022",
+    "npm_config_node_options": "",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_init_author_name": "",
+    "npm_config_git": "git",
+    "npm_config_scope": "",
+    "BUNDLER_ORIG_RB_USER_INSTALL": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "SECURITYSESSIONID": "186a8",
+    "RUBY_VERSION": "ruby-2.6.1",
+    "npm_config_unsafe_perm": "true",
+    "npm_config_tmp": "/var/folders/93/xjzgwzr55tn_126h7fn_myh40000gn/T",
+    "npm_config_onload_script": "",
+    "rvm_user_install_flag": "1",
+    "npm_node_execpath": "/Users/evangreer/.nvm/versions/node/v13.11.0/bin/node",
+    "npm_config_prefix": "/Users/evangreer/.nvm/versions/node/v13.11.0",
+    "npm_config_link": "",
+    "npm_config_format_package_lock": "true",
+    "COLORTERM": "truecolor",
+    "LOADED_MOCHA_OPTS": "true"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 24576,
+      "hard": "unlimited"
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": 67104768
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 1418,
+      "hard": 2128
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/Users/evangreer/.nvm/versions/node/v13.11.0/bin/node",
+    "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+    "/usr/lib/libSystem.B.dylib",
+    "/usr/lib/libc++.1.dylib",
+    "/usr/lib/libobjc.A.dylib",
+    "/usr/lib/libDiagnosticMessagesClient.dylib",
+    "/usr/lib/libicucore.A.dylib",
+    "/usr/lib/libz.1.dylib",
+    "/usr/lib/libc++abi.dylib",
+    "/usr/lib/system/libcache.dylib",
+    "/usr/lib/system/libcommonCrypto.dylib",
+    "/usr/lib/system/libcompiler_rt.dylib",
+    "/usr/lib/system/libcopyfile.dylib",
+    "/usr/lib/system/libcorecrypto.dylib",
+    "/usr/lib/system/libdispatch.dylib",
+    "/usr/lib/system/libdyld.dylib",
+    "/usr/lib/system/libkeymgr.dylib",
+    "/usr/lib/system/liblaunch.dylib",
+    "/usr/lib/system/libmacho.dylib",
+    "/usr/lib/system/libquarantine.dylib",
+    "/usr/lib/system/libremovefile.dylib",
+    "/usr/lib/system/libsystem_asl.dylib",
+    "/usr/lib/system/libsystem_blocks.dylib",
+    "/usr/lib/system/libsystem_c.dylib",
+    "/usr/lib/system/libsystem_configuration.dylib",
+    "/usr/lib/system/libsystem_coreservices.dylib",
+    "/usr/lib/system/libsystem_darwin.dylib",
+    "/usr/lib/system/libsystem_dnssd.dylib",
+    "/usr/lib/system/libsystem_info.dylib",
+    "/usr/lib/system/libsystem_m.dylib",
+    "/usr/lib/system/libsystem_malloc.dylib",
+    "/usr/lib/system/libsystem_networkextension.dylib",
+    "/usr/lib/system/libsystem_notify.dylib",
+    "/usr/lib/system/libsystem_sandbox.dylib",
+    "/usr/lib/system/libsystem_secinit.dylib",
+    "/usr/lib/system/libsystem_kernel.dylib",
+    "/usr/lib/system/libsystem_platform.dylib",
+    "/usr/lib/system/libsystem_pthread.dylib",
+    "/usr/lib/system/libsystem_symptoms.dylib",
+    "/usr/lib/system/libsystem_trace.dylib",
+    "/usr/lib/system/libunwind.dylib",
+    "/usr/lib/system/libxpc.dylib"
+  ]
+}
